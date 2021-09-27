@@ -30,7 +30,7 @@ body, html {
     border: none;
     width: 80%;
     padding: 10px 20px;
-    color: #CBC9C6;
+    /* color: #CBC9C6; */
     font-family: 'Lato__Bold';
 }
 
@@ -50,7 +50,7 @@ body, html {
     border: none;
     width: 80%;
     padding: 10px 20px;
-    color: #CBC9C6;
+    /* color: #CBC9C6; */
     font-family: 'Lato__Bold';
 }
 
@@ -335,7 +335,7 @@ input[type="text"] {
     border: none;
     width: 100%;
     padding: 10px 20px;
-    color: #CBC9C6;
+    /* color: #CBC9C6; */
     font-family: 'Lato__Bold';
 }
 
