@@ -1,0 +1,423 @@
+@font-face {
+    font-family: Lato__Bold;
+    src: url('../Fonts/Lato/Lato-Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+.plan__input {
+    max-width: 80%;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.back__color {
+    background-color: #FFFFFF;
+    margin: 20px;
+}
+
+.input__one input {
+    outline: none;
+    background-color: #EEF4FF;
+    border: none;
+    width: 80%;
+    padding: 10px 20px;
+    color: #CBC9C6;
+    font-family: 'Lato__Bold';
+}
+
+.input__one p {
+    color: #404040;
+    font-family: 'Lato__Bold';
+    font-size: calc(10pt + 00.15vw);
+}
+
+.plan__input__one {
+    margin: 30px 0px 0px 0px;
+}
+
+.plan__input__one input {
+    outline: none;
+    background-color: #EEF4FF;
+    border: none;
+    width: 80%;
+    padding: 10px 20px;
+    color: #CBC9C6;
+    font-family: 'Lato__Bold';
+}
+
+.plan__input__one p {
+    color: #404040;
+    font-family: 'Lato__Bold';
+    font-size: calc(10pt + 00.15vw);
+}
+
+input[type="text"] {
+    font-size: calc(10pt + 00.15vw);
+}
+
+.select__custom {
+    margin: 30px 0px;
+}
+
+.select__custom {
+    width: 80%;
+}
+
+.nice-select.wide {
+    border: none;
+    background-color: #EEF4FF;
+    color: #11101084;
+    font-family: 'Lato__Bold';
+    font-size: calc(12pt + 00.15vw);
+    font-family: 'Lato__Bold';
+}
+
+.select__custom p {
+    color: #404040;
+    font-family: 'Lato__Bold';
+    font-size: calc(10pt + 00.15vw);
+}
+
+.nice-select {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #EEF4FF;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 38px;
+    line-height: 36px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 30px;
+    position: relative;
+    text-align: left!important;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: auto
+}
+
+.nice-select:hover {
+    border-color: #dbdbdb
+}
+
+.nice-select.open, .nice-select:active, .nice-select:focus {
+    border-color: #999
+}
+
+.nice-select:after {
+    border-bottom: 2px solid #4264D0;
+    border-right: 2px solid #4264D0;
+    content: "";
+    display: block;
+    height: 10px;
+    margin-top: -4px;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    -webkit-transform-origin: 66% 66%;
+    transform-origin: 66% 66%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    width: 10px
+}
+
+.nice-select.open:after {
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg)
+}
+
+.nice-select.open .nice-select-dropdown {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0)
+}
+
+.nice-select.disabled {
+    border-color: #ededed;
+    color: #999;
+    pointer-events: none
+}
+
+.nice-select.disabled:after {
+    border-color: #ccc
+}
+
+.nice-select.wide {
+    width: 100%
+}
+
+.nice-select.wide .nice-select-dropdown {
+    left: 0!important;
+    right: 0!important
+}
+
+.nice-select.right {
+    float: right
+}
+
+.nice-select.right .nice-select-dropdown {
+    left: auto;
+    right: 0
+}
+
+.nice-select.small {
+    font-size: 12px;
+    height: 36px;
+    line-height: 34px
+}
+
+.nice-select.small:after {
+    height: 4px;
+    width: 4px
+}
+
+.nice-select.small .option {
+    line-height: 34px;
+    min-height: 34px
+}
+
+.nice-select .nice-select-dropdown {
+    margin-top: 4px;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 0 1px rgba(68, 68, 68, .11);
+    box-shadow: 0 0 0 1px rgba(68, 68, 68, .11);
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform: scale(.75) translateY(-19px);
+    transform: scale(.75) translateY(-19px);
+    -webkit-transition: all .2s cubic-bezier(.5, 0, 0, 1.25), opacity .15s ease-out;
+    transition: all .2s cubic-bezier(.5, 0, 0, 1.25), opacity .15s ease-out;
+    z-index: 9;
+    opacity: 0
+}
+
+.nice-select .list {
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+    max-height: 210px;
+    overflow-y: auto
+}
+
+.nice-select .list:hover .option:not(:hover) {
+    background-color: transparent!important
+}
+
+.nice-select .option {
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 40px;
+    list-style: none;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 29px;
+    text-align: left;
+    -webkit-transition: all .2s;
+    transition: all .2s
+}
+
+.nice-select .option.focus, .nice-select .option.selected.focus, .nice-select .option:hover {
+    background-color: #f6f6f6
+}
+
+.nice-select .option.selected {
+    font-weight: 700
+}
+
+.nice-select .option.disabled {
+    background-color: transparent;
+    color: #999;
+    cursor: default
+}
+
+.no-csspointerevents .nice-select .nice-select-dropdown {
+    display: none
+}
+
+.no-csspointerevents .nice-select.open .nice-select-dropdown {
+    display: block
+}
+
+.nice-select .list::-webkit-scrollbar {
+    width: 0
+}
+
+.nice-select .has-multiple {
+    white-space: inherit;
+    height: auto;
+    padding: 7px 12px;
+    min-height: 36px;
+    line-height: 22px
+}
+
+.nice-select .has-multiple span.current {
+    border: 1px solid #EEF4FF;
+    background: #eee;
+    padding: 0 10px;
+    border-radius: 3px;
+    display: inline-block;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 3px;
+    margin-right: 3px
+}
+
+.nice-select .has-multiple .multiple-options {
+    display: block;
+    line-height: 24px;
+    padding: 0
+}
+
+.nice-select .nice-select-search-box {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    pointer-events: none;
+}
+
+.nice-select .nice-select-search {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    color: #444;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 7px 12px;
+    margin: 0 10px 0 0;
+    width: 100%;
+    min-height: 36px;
+    line-height: 22px;
+    height: auto;
+    outline: 0!important;
+    font-size: 14px
+}
+
+.new__input {
+    margin: 60px 0px 0px 0px;
+}
+
+.new__input input {
+    outline: none;
+    background-color: #EEF4FF;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    color: #CBC9C6;
+    font-family: 'Lato__Bold';
+}
+
+.new__input p {
+    color: #404040;
+    font-family: 'Lato__Bold';
+    font-size: calc(10pt + 00.15vw);
+}
+
+.btn-bs-file {
+    position: relative;
+    width: 45%;
+}
+
+.btn-bs-file input[type="file"] {
+    position: absolute;
+    top: -9999999;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    width: 0;
+    height: 0;
+    outline: none;
+    cursor: inherit;
+}
+
+.monitor {
+    padding: 0px 0px 0px 220px;
+    transform: translateY(-20px);
+}
+
+@media screen and (min-width: 1920px) {
+    .monitor {
+        padding: 0px 0px 0px 290px;
+    }
+}
+
+.box__div p {
+    color: #404040;
+    font-family: 'Lato__Bold';
+    font-size: calc(10pt + 00.15vw);
+}
+
+.box__div input {
+    outline: none;
+    border: none;
+    background-color: #EEF4FF;
+}
+
+.pr__btn {
+    margin: 30px 0px 30px 0px;
+    text-align: center;
+    padding-right: 150px;
+}
+
+.btn-primary:active:focus {
+    box-shadow: none !important;
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: transparent;
+}
+
+.btn:focus {
+    outline: none;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.btn {
+    padding: 8px 50px !important;
+}
+
+.box__div input {
+    width: 80%;
+    height: 80px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 640px) {
+    .back__color {
+        margin: 0px;
+    }
+    .btn {
+        padding: 8px 20px !important;
+    }
+}

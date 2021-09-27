@@ -1,0 +1,956 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="viewport" content="height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- External CSS Links here -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/MobNav.css">
+    <link rel="stylesheet" href="CSS/pagelist.css">
+    <!-- Font link here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mirza:wght@700&display=swap" rel="stylesheet">
+    <!-- Lato font starts here -->
+    <!-- Montserrat font link starts here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/dataTables.bootstrap5.min.css">
+
+
+    <title>BonusMate - Dashboard</title>
+</head>
+
+<body>
+    <div class="Wrapper">
+        <!-- Dashboard row starts here -->
+        <div class='row__Side'>
+            <div class='lg__col'>
+                <div class='lg__sm__col'>
+                    <!-- Text of dashboard starts here -->
+                    <div class="Brand__Logo">
+                        <div class="logo__text">
+                            <p><span><img id="Logo__mate" src="./Assets/Group 4.png" alt=""></span>
+                                <span>BonusMate</span>
+                            </p>
+                        </div>
+                        <hr class="bottom__hr">
+                    </div>
+                    <!-- listed logo starts here -->
+                    <div class="listed__logo">
+                        <div class="inside__list">
+                            <a href="index.html">
+                                <p><span><img src="./Assets/house.png" alt=""></span>
+                                    <span>Dashboard</span>
+                                </p>
+                            </a>
+                        </div>
+                        <div class=" inside__list__two">
+                            <a href="CreatePage.html">
+                                <p><span><img src="./Assets/8884824001600002631 1.png" alt=""></span>
+                                    <span>Create Page</span>
+                                </p>
+                            </a>
+                        </div>
+                        <div class=" page__list">
+                            <a href="pagelist.html">
+                                <p><span><img src="./Assets/3369881021579090639 1.png" alt=""></span>
+                                    <span>Page List</span>
+                                </p>
+                            </a>
+                        </div>
+                        <div class=" list__Product">
+                            <a href="Add product.html">
+                                <p><span><img src="./Assets/8773139411594941301 1.png" alt=""></span>
+                                    <span>Add Product</span>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="Product__list">
+                            <a href="Productlist.html">
+                                <p><span><img src="./Assets/13030236741547546488 1.png" alt=""></span>
+                                    <span>Product List</span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <hr class="bottom__hr">
+                    <div class="bottom__list">
+                        <div class="Stn__list">
+                            <a href="#">
+                                <p><span><img src="./Assets/8598118331552644373 1.png" alt=""></span>
+                                    <span>Settings</span>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="log__list">
+                            <a href="#">
+                                <p><span><img src="./Assets/325325621618134427 1.png" alt=""></span>
+                                    <span>Logout</span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="rect">
+                        <div class="img__rect">
+                            <div class="img__rectangle">
+                                <img src="./Assets/Ellipse 2.png" alt="">
+                                <div class="rect__text">
+                                    <p>Upgrade to PRO</p>
+                                    <div class="rectangle__text">
+                                        <p>One year support,
+                                            monthly updates for uo
+                                            to other team members.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hr__bl">
+                    <!-- Img------------------- -->
+                    <div class="dl__img">
+                        <img src="./Assets/Ellipse 3.png" alt="">
+                        <p>Richard S. <br> <span>Tokyo, Japan</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobile nav -->
+            <header>
+                <div id="menu-toggle">
+                    <img src="./Assets/menu.png" width=20 height=20 alt="Menu"></img>
+                </div>
+
+                <nav id="menu">
+                    <div class="Brand__Logo">
+                        <div class="logo__text">
+                            <p><span><img id="Logo__mate" src="./Assets/Group 4.png" alt=""></span>
+                                <span>BonusMate</span>
+                            </p>
+                        </div>
+                        <hr class="bottom__hr">
+                    </div>
+                    <div class="Nav__menus">
+                        <a href="index.html">
+                            <div class="Nav__one">
+                                <p><span><img src="./Assets/6999615501553668337 1.png" alt=""></span>
+                                    <span>Dashboard</span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="CreatePage.html">
+                            <div class="Nav__one__two">
+                                <p><span><img src="./Assets/8884824001600002631 1.png" alt=""></span> <span>Create
+                                        Page</span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="pagelist.html">
+                            <div class="Nav__one__three">
+                                <p><span><img src="./Assets/3369881021579090639 1.png" alt=""></span> <span>Page
+                                        List</span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="Add product.html">
+                            <div class="Nav__one__four">
+                                <p><span><img src="./Assets/8773139411594941301 1.png" alt=""></span> <span>Add
+                                        Product</span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="Productlist.html">
+                            <div class="Nav__one__five">
+                                <p><span><img src="./Assets/13030236741547546488 1.png" alt=""></span> <span>Product
+                                        List</span>
+                                </p>
+                            </div>
+                        </a>
+                        <hr class="Nav__hr">
+                        <a href="">
+                            <div class="Nav__one__five">
+                                <p><span><img src="./Assets/8598118331552644373 1.png" alt=""></span> <span>Settings
+                                    </span>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="Nav__one__five">
+                                <p><span><img src="./Assets/325325621618134427 1.png" alt=""></span> <span>Logout
+                                    </span>
+                                </p>
+                            </div>
+                        </a>
+                        <div class="nav__elipse">
+                            <img src="./Assets/Rectangle 3.png" alt="">
+                            <div class="nav__bg">
+                                <img src="./Assets/Ellipse 2.png" alt="">
+                                <div class="nav__ellipse__text">
+                                    <p>Upgrade to PRO</p>
+                                </div>
+                                <div class="nav__elp__text">
+                                    <p>One year support, <br>
+                                        monthly updates for uo <br>
+                                        to other team members.</p>
+                                </div>
+                            </div>
+                            <hr class="Nav__hr">
+                        </div>
+                        <div class="grid__row__one">
+                            <div class="Card__col__bg__one">
+                                <img src="./Assets/Ellipse 3.png" alt="">
+                            </div>
+                            <div class="Card__col__bg__one">
+                                <p>Richard S. <br><span>Tokyo, Japan</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- mobile nav -->
+
+            <div class='Bg__col'>
+                <div class='right__sm__col'>
+                    <div class="dash">
+                        <p>Page List</p>
+                    </div>
+                    <!-- table starts here -->
+
+                    <div class="tablr__six">
+                        <table id="example" class="table table-striped" style="width:100%">
+                            <thead>
+                                <tr class="background">
+                                    <th>(Video URL)</th>
+                                    <th>Added Date</th>
+                                    <th>Last Updated Date</th>
+                                    <th>Action</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="flex__box"> <img src="./Assets/Rectangle 197.png" alt="">
+                                            <p>Bonus Page <br>
+                                                <span>http://www.youtube.com/watsc?e-hbxhbb-edgb-watch?</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td__one">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="multipal">
+                                            <a href="#">
+                                                <div class="png" id="ToolTip1">
+                                                    <img src="./Assets/iconfinder_2850903_document_file_menu_page_paper_icon 1.png"
+                                                        alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__tow" id="ToolTip2">
+                                                    <img src="./Assets/5756346281537184102 1 (1).png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__img" id="ToolTip3">
+                                                    <img src="./Assets/5899562021543238878 1.png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="pn__img__one" id="ToolTip4">
+                                                    <img src="./Assets/11536872261558965374 1.png" alt="">
+                                                </div>
+                                        </div></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex__box"> <img src="./Assets/Rectangle 197.png" alt="">
+                                            <p>Bonus Page <br>
+                                                <span>http://www.youtube.com/watsc?e-hbxhbb-edgb-watch?</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td__one">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="multipal">
+                                            <a href="#">
+                                                <div class="png" id="ToolTip5">
+                                                    <img src="./Assets/iconfinder_2850903_document_file_menu_page_paper_icon 1.png"
+                                                        alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__tow" id="ToolTip6">
+                                                    <img src="./Assets/5756346281537184102 1 (1).png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__img" id="ToolTip7">
+                                                    <img src="./Assets/5899562021543238878 1.png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="pn__img__one" id="ToolTip8">
+                                                    <img src="./Assets/11536872261558965374 1.png" alt="">
+                                                </div>
+                                        </div></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex__box"> <img src="./Assets/Rectangle 197.png" alt="">
+                                            <p>Bonus Page <br>
+                                                <span>http://www.youtube.com/watsc?e-hbxhbb-edgb-watch?</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td__one">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="multipal">
+                                            <a href="#">
+                                                <div class="png" id="ToolTip9">
+                                                    <img src="./Assets/iconfinder_2850903_document_file_menu_page_paper_icon 1.png"
+                                                        alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__tow" id="ToolTip10">
+                                                    <img src="./Assets/5756346281537184102 1 (1).png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__img" id="ToolTip11">
+                                                    <img src="./Assets/5899562021543238878 1.png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="pn__img__one" id="ToolTip12">
+                                                    <img src="./Assets/11536872261558965374 1.png" alt="">
+                                                </div>
+                                        </div></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex__box"> <img src="./Assets/Rectangle 197.png" alt="">
+                                            <p>Bonus Page <br>
+                                                <span>http://www.youtube.com/watsc?e-hbxhbb-edgb-watch?</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td__one">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="multipal">
+                                            <a href="#">
+                                                <div class="png" id="ToolTip13">
+                                                    <img src="./Assets/iconfinder_2850903_document_file_menu_page_paper_icon 1.png"
+                                                        alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__tow" id="ToolTip14">
+                                                    <img src="./Assets/5756346281537184102 1 (1).png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__img" id="ToolTip15">
+                                                    <img src="./Assets/5899562021543238878 1.png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="pn__img__one" id="ToolTip16">
+                                                    <img src="./Assets/11536872261558965374 1.png" alt="">
+                                                </div>
+                                        </div></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex__box"> <img src="./Assets/Rectangle 197.png" alt="">
+                                            <p>Bonus Page <br>
+                                                <span>http://www.youtube.com/watsc?e-hbxhbb-edgb-watch?</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td__one">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="multipal">
+                                            <a href="#">
+                                                <div class="png" id="ToolTip17">
+                                                    <img src="./Assets/iconfinder_2850903_document_file_menu_page_paper_icon 1.png"
+                                                        alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__tow" id="ToolTip18">
+                                                    <img src="./Assets/5756346281537184102 1 (1).png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__img" id="ToolTip19">
+                                                    <img src="./Assets/5899562021543238878 1.png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="pn__img__one" id="ToolTip20">
+                                                    <img src="./Assets/11536872261558965374 1.png" alt="">
+                                                </div>
+                                        </div></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex__box"> <img src="./Assets/Rectangle 197.png" alt="">
+                                            <p>Bonus Page <br>
+                                                <span>http://www.youtube.com/watsc?e-hbxhbb-edgb-watch?</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td__one">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="multipal">
+                                            <a href="#">
+                                                <div class="png" id="ToolTip21">
+                                                    <img src="./Assets/iconfinder_2850903_document_file_menu_page_paper_icon 1.png"
+                                                        alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__tow" id="ToolTip22">
+                                                    <img src="./Assets/5756346281537184102 1 (1).png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__img" id="ToolTip23">
+                                                    <img src="./Assets/5899562021543238878 1.png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="pn__img__one" id="ToolTip24">
+                                                    <img src="./Assets/11536872261558965374 1.png" alt="">
+                                                </div>
+                                        </div></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex__box"> <img src="./Assets/Rectangle 197.png" alt="">
+                                            <p>Bonus Page <br>
+                                                <span>http://www.youtube.com/watsc?e-hbxhbb-edgb-watch?</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td__one">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="multipal">
+                                            <a href="#">
+                                                <div class="png" id="ToolTip25">
+                                                    <img src="./Assets/iconfinder_2850903_document_file_menu_page_paper_icon 1.png"
+                                                        alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__tow" id="ToolTip26">
+                                                    <img src="./Assets/5756346281537184102 1 (1).png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__img" id="ToolTip27">
+                                                    <img src="./Assets/5899562021543238878 1.png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="pn__img__one" id="ToolTip28">
+                                                    <img src="./Assets/11536872261558965374 1.png" alt="">
+                                                </div>
+                                        </div></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex__box"> <img src="./Assets/Rectangle 197.png" alt="">
+                                            <p>Bonus Page <br>
+                                                <span>http://www.youtube.com/watsc?e-hbxhbb-edgb-watch?</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td__one">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="multipal">
+                                            <a href="#">
+                                                <div class="png" id="ToolTip29">
+                                                    <img src="./Assets/iconfinder_2850903_document_file_menu_page_paper_icon 1.png"
+                                                        alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__tow" id="ToolTip30">
+                                                    <img src="./Assets/5756346281537184102 1 (1).png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__img" id="ToolTip31">
+                                                    <img src="./Assets/5899562021543238878 1.png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="pn__img__one" id="ToolTip32">
+                                                    <img src="./Assets/11536872261558965374 1.png" alt="">
+                                                </div>
+                                        </div></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex__box"> <img src="./Assets/Rectangle 197.png" alt="">
+                                            <p>Bonus Page <br>
+                                                <span>http://www.youtube.com/watsc?e-hbxhbb-edgb-watch?</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td__one">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="multipal">
+                                            <a href="#">
+                                                <div class="png" id="ToolTip33">
+                                                    <img src="./Assets/iconfinder_2850903_document_file_menu_page_paper_icon 1.png"
+                                                        alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__tow" id="ToolTip34">
+                                                    <img src="./Assets/5756346281537184102 1 (1).png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__img" id="ToolTip35">
+                                                    <img src="./Assets/5899562021543238878 1.png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="pn__img__one" id="ToolTip36">
+                                                    <img src="./Assets/11536872261558965374 1.png" alt="">
+                                                </div>
+                                        </div></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex__box"> <img src="./Assets/Rectangle 197.png" alt="">
+                                            <p>Bonus Page <br>
+                                                <span>http://www.youtube.com/watsc?e-hbxhbb-edgb-watch?</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td__one">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="multipal">
+                                            <a href="#">
+                                                <div class="png" id="ToolTip37">
+                                                    <img src="./Assets/iconfinder_2850903_document_file_menu_page_paper_icon 1.png"
+                                                        alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__tow" id="ToolTip38">
+                                                    <img src="./Assets/5756346281537184102 1 (1).png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__img" id="ToolTip39">
+                                                    <img src="./Assets/5899562021543238878 1.png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="pn__img__one" id="ToolTip40">
+                                                    <img src="./Assets/11536872261558965374 1.png" alt="">
+                                                </div>
+                                        </div></a>
+                                    </td>
+
+                                </tr>
+
+                                <!-- 2nd pg -->
+                                <tr>
+                                    <td>
+                                        <div class="flex__box"> <img src="./Assets/Rectangle 197.png" alt="">
+                                            <p>Bonus Page <br>
+                                                <span>http://www.youtube.com/watsc?e-hbxhbb-edgb-watch?</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td__one">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="multipal">
+                                            <a href="#">
+                                                <div class="png" id="ToolTip41">
+                                                    <img src="./Assets/iconfinder_2850903_document_file_menu_page_paper_icon 1.png"
+                                                        alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__tow" id="ToolTip42">
+                                                    <img src="./Assets/5756346281537184102 1 (1).png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__img" id="ToolTip43"> 
+                                                    <img src="./Assets/5899562021543238878 1.png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="pn__img__one" id="ToolTip44">
+                                                    <img src="./Assets/11536872261558965374 1.png" alt="">
+                                                </div>
+                                        </div></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex__box"> <img src="./Assets/Rectangle 197.png" alt="">
+                                            <p>Bonus Page <br>
+                                                <span>http://www.youtube.com/watsc?e-hbxhbb-edgb-watch?</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td__one">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="multipal">
+                                            <a href="#">
+                                                <div class="png" id="ToolTip45">
+                                                    <img src="./Assets/iconfinder_2850903_document_file_menu_page_paper_icon 1.png"
+                                                        alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__tow" id="ToolTip46">
+                                                    <img src="./Assets/5756346281537184102 1 (1).png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__img" id="ToolTip47">
+                                                    <img src="./Assets/5899562021543238878 1.png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="pn__img__one" id="ToolTip48">
+                                                    <img src="./Assets/11536872261558965374 1.png" alt="">
+                                                </div>
+                                        </div></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex__box"> <img src="./Assets/Rectangle 197.png" alt="">
+                                            <p>Bonus Page <br>
+                                                <span>http://www.youtube.com/watsc?e-hbxhbb-edgb-watch?</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td__one">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="multipal">
+                                            <a href="#">
+                                                <div class="png" id="ToolTip49">
+                                                    <img src="./Assets/iconfinder_2850903_document_file_menu_page_paper_icon 1.png"
+                                                        alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__tow" id="ToolTip50">
+                                                    <img src="./Assets/5756346281537184102 1 (1).png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__img" id="ToolTip51">
+                                                    <img src="./Assets/5899562021543238878 1.png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="pn__img__one" id="ToolTip52">
+                                                    <img src="./Assets/11536872261558965374 1.png" alt="">
+                                                </div>
+                                        </div></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex__box"> <img src="./Assets/Rectangle 197.png" alt="">
+                                            <p>Bonus Page <br>
+                                                <span>http://www.youtube.com/watsc?e-hbxhbb-edgb-watch?</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td__one">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="multipal">
+                                            <a href="#">
+                                                <div class="png" id="ToolTip53">
+                                                    <img src="./Assets/iconfinder_2850903_document_file_menu_page_paper_icon 1.png"
+                                                        alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__tow" id="ToolTip54">
+                                                    <img src="./Assets/5756346281537184102 1 (1).png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__img" id="ToolTip55">
+                                                    <img src="./Assets/5899562021543238878 1.png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="pn__img__one" id="ToolTip56">
+                                                    <img src="./Assets/11536872261558965374 1.png" alt="">
+                                                </div>
+                                        </div></a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex__box"> <img src="./Assets/Rectangle 197.png" alt="">
+                                            <p>Bonus Page <br>
+                                                <span>http://www.youtube.com/watsc?e-hbxhbb-edgb-watch?</span>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="next__td__one">
+                                            <p>18 Jun 2021 11:23 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="multipal">
+                                            <a href="#">
+                                                <div class="png" id="ToolTip57">
+                                                    <img src="./Assets/iconfinder_2850903_document_file_menu_page_paper_icon 1.png"
+                                                        alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__tow" id="ToolTip58">
+                                                    <img src="./Assets/5756346281537184102 1 (1).png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="png__img" id="ToolTip59">
+                                                    <img src="./Assets/5899562021543238878 1.png" alt="">
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="pn__img__one" id="ToolTip60">
+                                                    <img src="./Assets/11536872261558965374 1.png" alt="">
+                                                </div>
+                                        </div></a>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- table Ends here -->
+                </div>
+
+            </div>
+        </div>
+        <!-- Dashboard row Ends here -->
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./JS/Chart.js" type="text/javascript"></script>
+    <script src="./JS/donutchart.js" type="text/javascript"></script>
+    <script src="./JS/RadarChart.js" type="text/javascript"></script>
+    <script src="./JS/Nav.js" type="text/javascript"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+    <script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.2/js/dataTables.bootstrap5.min.js"></script>
+
+    <script src="./JS/easyTooltip.min.js"></script>
+    <script src="./JS/ToolTip.js"></script>
+</body>
+
+</html>
